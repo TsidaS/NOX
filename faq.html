@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html>
+<head>
+<title>
+    Kursinis Darbas
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" >
+<!-- Ion icons -->
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-fluid">
+            <a href="index.html" class="logo">
+                    <img src="502e8354-72c2-4039-bbc8-e925ace8aaf1_200x200.png">
+                </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-left">
+                        <li class="nav-item"><a class="nav-link" href="support.html">SUPPORT</a</li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">CONTACTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="feedbacks.html">FEEDBACKS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    </ul>
+                        <div class="container jumbotron text-center">
+                        <ul class="nav navbar-nav ml-auto" id="logincontent">
+                            <button type="button" class="btn btn-success1" data-toggle="modal" data-target="#loginModal" id="signin">SIGN
+                                IN</button>
+                            <button class="button" class="btn btn-success" data-toggle="modal" data-target="#signupModal" id="signup">SIGN
+                                UP</button>
+                        </ul>
+                </div>
+            </div>
+         </div>
+    </nav>
+    <div class="modal fade" role="dialog" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content" id="signinform">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control" placeholder="Vartotojo vardas">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Slaptažodis">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" id="modalsignin">Prisijungti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" id="signupModal">
+        <div class="modal-dialog">
+            <div class="modal-content" id="signupform">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" name="email" class="form-control" placeholder="E-paštas">
+                    </div>
+                    <div class="form-group">
+                        <input type="username" name="username" class="form-control" placeholder="Vartotojo vardas">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="Slaptažodis">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" id="modalsignup">Susikurti paskyrą</button>
+                </div>
+                <div class="form-group form-check" id="agreement">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1"> Aš sutinku su <a class="link" href="#">taisyklės ir sąlygos</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section>
+        <div class="freqcont">
+            <div class="accordion">
+                <div class="accordion-item" id="question1">
+                    <a class="accordion-link" href="#question1">
+                        Kaip greit atsakome į atsiliepimus?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+
+                    </a>
+                    <div class="answer">
+                        <p>Niekada</p>
+                    </div>
+                </div>
+                <div class="accordion-item" id="question2">
+                    <a class="accordion-link" href="#question2">
+                        Ties kuo specializuojames?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+
+                    </a>
+                    <div class="answer">
+                        <p>Gamtose švara.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" id="question3">
+                    <a class="accordion-link" href="#question3">
+                        Kiek kartų galima aukoti pinigų į fondą?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>Nėra numatyto limito.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" id="question4">
+                    <a class="accordion-link" href="#question4">
+                        Kokia minimali aukojimo suma?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+
+                    </a>
+                    <div class="answer">
+                        <p>2€.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <a class="" href="https://www.facebook.com/"><img src="./assets/facebook.svg"> Facebook</a> 
+        <img hspace="10 pixels">
+        <a class="" href="https://twitter.com/"><img src="./assets/twitter.svg"> Twitter</a> 
+        <img hspace="10 pixels">
+        <a class="" href="https://www.youtube.com/"><img src="./assets/youtube.svg"> Youtube</a> 
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</html>

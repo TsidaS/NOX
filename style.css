@@ -1,0 +1,270 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("wallhaven-lmp6r2.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+nav
+{
+  background: #51bfd380;
+  height: 60px;
+  width: 100%;
+  flex-direction: space-between;
+  justify-content: space-between;
+}
+.navbar-nav.ml-auto li a
+{
+  position: relative;
+  top:-40%;
+}
+
+#logincontent
+{
+    margin-top: 8%;
+    margin-right: 5px;
+    position: relative;
+}
+
+#logincontent button
+{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    background: none;
+    border: transparent;
+}
+.nav-link:hover
+{
+  border-bottom: 4px solid white;
+}
+
+#signup:hover 
+{
+    background-color: white;
+    cursor: pointer;
+    color: blue;
+}
+
+#signin:hover
+{
+    background: rgb(0, 243, 53);
+    cursor:pointer;
+}
+.container.jumbotron.text-center 
+{
+  background-color: transparent;
+  padding: 5px 5px;
+  width: 28%;
+  margin-right: 5px;
+  margin-top:2.3%;
+  margin-top: inherit;
+  justify-content: center;
+  position: relative;
+  min-width: max-content;
+}
+
+.mesa
+{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  font-family: sans-serif;
+  color: #420420;
+  text-shadow: 1px 1px #133769;
+  line-height: 1.5;
+  width: 50%;
+  padding-bottom: 60px;
+}
+
+.modal-footer
+{
+  justify-content: center;
+}
+
+
+#agreement 
+{
+  margin-top: -10%;
+  margin-left: 5%;
+}
+
+.output 
+{
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.TablePricing
+{
+  max-width:768px;
+  font-size: 20px;
+  font-family: "Arial";
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  border-radius: 5px;
+  color: rgb(99, 3, 51); 
+}
+.ImageGalery
+{
+  max-width:1000px;
+  position: fixed;
+  top: 30%;
+  left: 10%;
+}
+.footer{ 
+  /* bottom: 4%;
+  left: 10%;
+  position: fixed; */
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  color: white;
+  background-color: rgba(64, 224, 208, 0.603);
+  padding-right: 100px;
+}  
+
+a:link, a:visited
+{
+  color: rgb(96, 3, 65, .8);
+}
+
+.footer img
+{
+  width: 32px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/* faq */
+section{
+  width: 100%;
+  height: 5vh;
+  background-color: #3c4053;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.freqcont{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.accordion-item{
+  background-color: #283042;
+  border-radius: .4rem;
+  margin-bottom:  1rem;
+  padding: 1rem;
+  box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+}
+.accordion-link{
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  background-color: #283042;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.accordion-link i{
+  color: #e7d5ff;
+  padding: .5rem;
+}
+.accordion-link .ion-md-remove{
+  display: none;
+}
+
+.answer{
+   max-height: 0;
+   overflow: hidden;
+   position: relative;
+   background-color: #212838;
+   /* transition: ; */
+}
+.answer::before{
+  content: "";
+  position: absolute;
+  width: .0rem;
+  height: 90%;
+  background-color: #8fc400;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.answer p{
+  color: rgba(255, 255, 255, .8);
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+.accordion-item:target .answer{
+  max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-add{
+  display: none;
+}
+.accordion-item:target .accordion-link .ion-md-remove{
+  display: block;
+}
